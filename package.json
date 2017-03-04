@@ -22,7 +22,7 @@
   "main": "lib",
   "repository": {
     "type": "git",
-    "url": "vslinko/babel-plugin-preact-require"
+    "url": "impronunciable/babel-plugin-preact-require"
   },
   "scripts": {
     "clean": "rimraf lib",
