@@ -1,4 +1,4 @@
-import { h } from 'preact'
+import { h } from "preact";
 function Component1() {
-  return <div />
+  return <div />;
 }

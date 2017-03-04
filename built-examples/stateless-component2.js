@@ -1,2 +1,2 @@
-import { h } from 'react'
-const Component2 = () => <div />
+import { h } from "preact";
+const Component2 = () => <div />;
