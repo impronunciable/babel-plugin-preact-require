@@ -1,28 +1,28 @@
 {
-  "name": "babel-plugin-react-require",
-  "version": "3.0.0",
-  "description": "Babel plugin that adds React import declaration if file contains JSX tags.",
+  "name": "babel-plugin-preact-require",
+  "version": "1.0.0",
+  "description": "Babel plugin that adds Preact import declaration if file contains JSX tags.",
   "keywords": [
     "babel",
     "babel-plugin",
-    "react",
+    "preact",
     "jsx"
   ],
-  "homepage": "https://github.com/vslinko/babel-plugin-react-require",
+  "homepage": "https://github.com/impronunciable/babel-plugin-preact-require",
   "bugs": {
-    "url": "https://github.com/vslinko/babel-plugin-react-require/issues",
-    "email": "vslinko@yahoo.com"
+    "url": "https://github.com/impronunciable/babel-plugin-preact-require/issues",
+    "email": "dan.zajdband@gmail.com"
   },
   "license": "MIT",
   "author": {
-    "name": "Vyacheslav Slinko",
-    "email": "vslinko@yahoo.com",
-    "url": "https://twitter.com/vslinko"
+    "name": "Dan Zajdband",
+    "email": "dan.zajdband@gmail.com",
+    "url": "https://twitter.com/impronunciable"
   },
   "main": "lib",
   "repository": {
     "type": "git",
-    "url": "vslinko/babel-plugin-react-require"
+    "url": "vslinko/babel-plugin-preact-require"
   },
   "scripts": {
     "clean": "rimraf lib",

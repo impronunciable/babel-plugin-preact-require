@@ -1,6 +1,6 @@
-import React from "react";
+import { h } from 'preact'
 export default class Component {
-  render() {
-    return <div />;
+  render () {
+    return <div />
   }
 }

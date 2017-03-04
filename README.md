@@ -1,9 +1,12 @@
-# babel-plugin-react-require
+# babel-plugin-preact-require
 
-Babel plugin that adds React import declaration if file contains JSX tags.
+Babel plugin that adds Preact's `h` declaration if file contains JSX tags.
 
-This plugin is only about stateless components that doesn't extends `React.Component`.
-If you want to use any other React functions then you should import their by yourself.
+This plugin is only about stateless components that doesn't extends `Component`.
+If you want to use any other Preact functions then you should import their by yourself.
+
+This code was forked from [babel-plugin-react-require](https://github.com/vslinko/babel-plugin-react-require)
+so all credit should go to [@vslinko](https://twitter.com/vslinko)
 
 ## Example
 
@@ -13,37 +16,37 @@ Your `component.js` that contains this code:
 export default function Component() {
   return (
     <div />
-  );
+  )
 }
 ```
 
 will be transpiled into something like this:
 
 ```js
-import React from 'react';
+import { h } from 'preact'
 
 export default function Component() {
   /* this part will be transpiled by babel itself as usual */
   return (
-    React.createElement('div')
-  );
+    h('div')
+  )
 }
 ```
 
 ## Usage
 
-* Install `babel-plugin-react-require`.
+* Install `babel-plugin-preact-require`.
 
 ```
-npm install babel-plugin-react-require --save-dev
+npm install babel-plugin-preact-require --save-dev
 ```
 
-* Add `react-require` into `.babelrc`. This plugin should be defined before `transform-es2015-modules-commonjs` plugin because it's using ES2015 modules syntax to import `React` into scope.
+* Add `preact-require` into `.babelrc`. This plugin should be defined before `transform-es2015-modules-commonjs` plugin because it's using ES2015 modules syntax to import preact's `h` into scope.
 
 ```json
 {
   "plugins": [
-    "react-require"
+    "preact-require"
   ]
 }
 ```

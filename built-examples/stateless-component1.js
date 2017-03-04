@@ -1,4 +1,4 @@
-import React from "react";
+import { h } from 'preact'
 function Component1() {
-  return <div />;
+  return <div />
 }
